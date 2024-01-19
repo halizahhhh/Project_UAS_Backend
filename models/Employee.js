@@ -83,7 +83,7 @@ class Employee {
     }
 
      //get data berdasarkan status 
-  static find(status) {
+  static status(status) {
     // lakukan promise, untuk mencari data pegawai berdasarkan status
     return new Promise((resolve, reject) => {
       // lakukan query ke db untuk ambil data berdasarkan status

@@ -23,8 +23,8 @@ router.get("/employees/:id", EmployeeController.show);
 //menambahkan route untuk mencari data pegawai berdasarkan nama
 router.get("/employees/search/:nama", EmployeeController.search);
 //menambahkan route untuk mencari data paegawai berdasarkan status
-router.get("/employees/status/active", EmployeeController.status);
-router.get("/employees/status/inactive", EmployeeController.status);
-router.get("/employees/status/terminated", EmployeeController.status);
+router.get("/employees/status/:status", EmployeeController.status);
+router.get("/employees/status/:status", EmployeeController.status);
+router.get("/employees/status/:status", EmployeeController.status);
 // export router
 module.exports = router;

@@ -134,10 +134,10 @@ class EmployeeController {
   }
 
     // Membuat method Status untuk mencari data pegawai berdasarkan status apakah actic atau inactiv 
-  async status (req, res) {
+  async status(req, res) {
     const {status} = req.params;
     // cari pegawai berdasarkan status
-    const employees = await Employee.find(status);
+    const employees = await Employee.status(status);
 
     if(employees){
         const data = {
