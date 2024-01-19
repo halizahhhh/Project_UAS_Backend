@@ -24,7 +24,5 @@ router.get("/employees/:id", EmployeeController.show);
 router.get("/employees/search/:nama", EmployeeController.search);
 //menambahkan route untuk mencari data paegawai berdasarkan status
 router.get("/employees/status/:status", EmployeeController.status);
-router.get("/employees/status/:status", EmployeeController.status);
-router.get("/employees/status/:status", EmployeeController.status);
 // export router
 module.exports = router;
